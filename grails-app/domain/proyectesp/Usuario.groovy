@@ -3,10 +3,8 @@ package proyectesp
 class Usuario {
 
     String name
-    String lastName
+    String lastname
     String email
-    Date fecha = new Date()
+    String password
 
-    static constraints = {
-    }
 }
