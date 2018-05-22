@@ -10,13 +10,17 @@ class UsuarioController {
     def login() {
     }
 
-    def registracion() {
+    def sing_up() {
     }
 
     def logueo() {
         if (UsuarioService.realizarLogin(params.Email, params.Password))
         {
             redirect(action: "loginExitoso")
+        }
+        else
+        {
+            redirect(action: "login")
         }
     }
 
@@ -28,6 +32,7 @@ class UsuarioController {
         else
         {
             //Indicar donde fue el error
+            redirect(action: "registracion")
         }
     }
 

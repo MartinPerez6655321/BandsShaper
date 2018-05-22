@@ -1,5 +1,7 @@
 <html>
-  <head></head>
+  <head>
+  <meta name="layout" content="ProyectESP" />
+  </head>
   <body>
     <g:form action="alta" method="post">
       Nombre: <g:field type="text" name="Name"/><br>

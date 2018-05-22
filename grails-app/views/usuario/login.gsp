@@ -1,5 +1,7 @@
 <html>
-  <head></head>
+  <head>
+  <meta name="layout" content="ProyectESP" />
+  </head>
   <body>
     <g:form action="logueo" method="post">
       Email: <g:field type="text" name="Email"/><br>
