@@ -32,7 +32,7 @@ class UsuarioController {
         else
         {
             //Indicar donde fue el error
-            redirect(action: "registracion")
+            redirect(action: "sing_up")
         }
     }
 

@@ -1,6 +1,6 @@
 <html>
   <head>
-  <meta name="layout" content="ProyectESP" />
+  <meta name="layout" content="UserHome" />
   </head>
   <body>
     <g:form action="alta" method="post">

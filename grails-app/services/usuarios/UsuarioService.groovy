@@ -27,7 +27,14 @@ class UsuarioService {
 
     static boolean realizarLogin(String email, String pass)
     {
-        return true
+        if (Usuario.findByEmail(email) && Usuario.findByPassword(pass))
+        {
+            return true
+        }
+        else
+        {
+            return false
+        }
     }
 
 }
