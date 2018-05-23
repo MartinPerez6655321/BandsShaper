@@ -1,6 +1,9 @@
 package usuarios
 
 import grails.gorm.transactions.Transactional
+import proyectesp.GeneroMusical
+import proyectesp.Instrumento
+import proyectesp.RolMusical
 import proyectesp.Usuario
 
 @Transactional
@@ -36,5 +39,43 @@ class UsuarioService {
             return false
         }
     }
+
+    static guardarInstrumento(String nameInstr){
+        if (Instrumento.findByName(nameInstr)==null){
+            new Instrumento(name: nameInstr).save()
+        }
+    }
+
+
+    static guardarGeneroMusical(String nameGenero){
+        if (GeneroMusical.findByName(nameGenero)==null){
+            new GeneroMusical(name: nameGenero).save()
+        }
+    }
+
+    static guardarRolMusical(String nameRol){
+        if (RolMusical.findByName(nameRol)==null){
+            new RolMusical(name: nameRol).save()
+        }
+    }
+
+
+//-------------------------------------------------------------
+//-------------------------------------------------------------
+
+    static Instrumento[] listarInstrumentos() {
+        Instrumento.list() as Instrumento[]
+    }
+
+    static GeneroMusical[] listarGenerosMusicales() {
+        GeneroMusical.list() as GeneroMusical[]
+    }
+
+    static RolMusical[] listarRolesMusicales() {
+        RolMusical.list() as RolMusical[]
+    }
+
+//-------------------------------------------------------------
+//-------------------------------------------------------------
 
 }
