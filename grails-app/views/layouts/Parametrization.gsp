@@ -13,19 +13,20 @@
 <g:layoutHead/>
 </head>
 <body>
-<div id="header">
+
 <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-    <div class="container-header">
-        <a class="navbar-brand" href="#">Home</a>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Parametrization</a>
     </div>
-    <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://localhost:8080/usuario/sing_up"><span class="glyphicon glyphicon-user"></span> Sing Up</a></li>
-        <li><a href="http://localhost:8080/usuario/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    <ul class="nav navbar-nav">
+      <li><a href="http://localhost:8080/usuario/addInstrument">Instrumento</a></li>
+      <li><a href="http://localhost:8080/usuario/addGenderMusic">Genero Musical</a></li>
+      <li><a href="http://localhost:8080/usuario/addRoleMusic">Rol Musical</a></li>
     </ul>
-    </div>
+  </div>
 </nav>
-</div>
+
 <g:layoutBody />
 </body>
 </html>

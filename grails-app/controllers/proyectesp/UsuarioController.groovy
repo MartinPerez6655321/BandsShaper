@@ -4,8 +4,15 @@ import usuarios.UsuarioService
 
 class UsuarioController {
 
-    def index() {
+    def home() {
+        redirect(action: "login")
     }
+
+    def parametrization() {
+        redirect(action: "addInstrument")
+    }
+
+    //---------------------------------------------------------------------------
 
     def login() {
     }
@@ -42,6 +49,35 @@ class UsuarioController {
 
     def loginExitoso(){
 
+    }
+
+    //---------------------------------------------------------------------------
+
+    def addInstrument(){
+        [ instrumentos: UsuarioService.listarInstrumentos() ]
+    }
+
+    def addGenderMusic(){
+        [ generosMusicales: UsuarioService.listarGenerosMusicales() ]
+    }
+
+    def addRoleMusic(){
+        [ rolesMusicales: UsuarioService.listarRolesMusicales() ]
+    }
+
+    def saveInstrumento(){
+        UsuarioService.guardarInstrumento(params.instrument)
+        redirect(action: "addInstrument")
+    }
+
+    def saveGeneroMusical(){
+        UsuarioService.guardarGeneroMusical(params.gender)
+        redirect(action: "addGenderMusic")
+    }
+
+    def saveRolMusical(){
+        UsuarioService.guardarRolMusical(params.role)
+        redirect(action: "addRoleMusic")
     }
 
 }
