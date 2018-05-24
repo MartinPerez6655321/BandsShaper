@@ -4,6 +4,10 @@ import usuarios.UsuarioService
 
 class UsuarioController {
 
+    def index(){
+
+    }
+
     def home() {
         redirect(action: "login")
     }
@@ -12,12 +16,13 @@ class UsuarioController {
         redirect(action: "addInstrument")
     }
 
-    //---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
 
     def login() {
     }
 
-    def sing_up() {
+    def sign_up() {
     }
 
     def logueo() {
@@ -39,7 +44,7 @@ class UsuarioController {
         else
         {
             //Indicar donde fue el error
-            redirect(action: "sing_up")
+            redirect(action: "sign_up")
         }
     }
 
@@ -51,7 +56,8 @@ class UsuarioController {
 
     }
 
-    //---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
 
     def addInstrument(){
         [ instrumentos: UsuarioService.listarInstrumentos() ]
@@ -79,5 +85,9 @@ class UsuarioController {
         UsuarioService.guardarRolMusical(params.role)
         redirect(action: "addRoleMusic")
     }
+
+//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
+
 
 }

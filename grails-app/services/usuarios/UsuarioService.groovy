@@ -9,10 +9,6 @@ import proyectesp.Usuario
 @Transactional
 class UsuarioService {
 
-    def serviceMethod() {
-
-    }
-
     static boolean realizarAlta(String nombre, String apellido, String email, String pass)
     {
         def newUser = new Usuario(name: nombre, lastname: apellido, email: email, password: pass)
@@ -40,12 +36,14 @@ class UsuarioService {
         }
     }
 
+//-------------------------------------------------------------
+//-------------------------------------------------------------
+
     static guardarInstrumento(String nameInstr){
         if (Instrumento.findByName(nameInstr)==null){
             new Instrumento(name: nameInstr).save()
         }
     }
-
 
     static guardarGeneroMusical(String nameGenero){
         if (GeneroMusical.findByName(nameGenero)==null){
@@ -58,10 +56,6 @@ class UsuarioService {
             new RolMusical(name: nameRol).save()
         }
     }
-
-
-//-------------------------------------------------------------
-//-------------------------------------------------------------
 
     static Instrumento[] listarInstrumentos() {
         Instrumento.list() as Instrumento[]

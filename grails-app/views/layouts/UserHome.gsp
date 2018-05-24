@@ -9,23 +9,46 @@
 <title>
 <g:layoutTitle default="BandsShaper"/>
 </title>
-<asset:stylesheet src="bootstrap.css"/>
+
+<!-- <asset:stylesheet src="bootstrap.css"/>  -->
+
+
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+
 <g:layoutHead/>
+
 </head>
 <body>
-<div id="header">
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-    <div class="container-header">
-        <a class="navbar-brand" href="#">Home</a>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-        <li><a href="http://localhost:8080/usuario/sing_up"><span class="glyphicon glyphicon-user"></span> Sing Up</a></li>
-        <li><a href="http://localhost:8080/usuario/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" style="color: #e3f2fd;">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+   <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost:8080/usuario/login">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost:8080/usuario/sign_up">Sign Up</a>
+      </li>
     </ul>
-    </div>
+  </div>
 </nav>
-</div>
+
+
 <g:layoutBody />
 </body>
 </html>

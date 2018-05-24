@@ -1,6 +1,6 @@
 <html>
   <head>
-  <meta name="layout" content="UserHome" />
+    <meta name="layout" content="UserHome"/>
   </head>
   <body>
     <g:form action="logueo" method="post">
