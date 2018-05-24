@@ -10,9 +10,7 @@
 <g:layoutTitle default="BandsShaper"/>
 </title>
 
-
 <!-- <asset:stylesheet src="bootstrap.css"/>  -->
-
 
  <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -26,11 +24,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-
 <g:layoutHead/>
-</head>
-<body>
-
 
 <nav class="navbar navbar-dark bg-primary">
   <a class="navbar-brand" style="color: yellow">Parametrizacion</a>
@@ -53,6 +47,9 @@
     </ul>
   </div>
 </nav>
+
+</head>
+<body>
 
 
 <g:layoutBody />
