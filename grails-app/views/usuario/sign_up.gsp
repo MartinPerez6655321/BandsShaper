@@ -1,14 +1,37 @@
 <html>
   <head>
-  <meta name="layout" content="UserHome" />
+    <meta name="layout" content="UserHome"/>
+    <asset:stylesheet src="StyleRegister.css"/>
   </head>
+
+
   <body>
-    <g:form action="alta" method="post">
-      Nombre: <g:field type="text" name="Name"/><br>
-      Apellido: <g:field type="text" name="LastName"/><br>
-      Email: <g:field type="text" name="Email"/><br>
-      Contraseña: <g:field type="password" name="Password"/><br><br>
-      <g:submitButton name="submit" value="Registrarme"/>
-    </g:form>
+
+	<div id="hoja">
+	<form action="alta" method="post">
+	  <h1>Sign up</h1>
+	  <div class="form-group">
+	    <label for="Name">Name:</label>
+	    <input name="Name" type="name" class="form-control" id="Name">
+	  </div>
+	  <div class="form-group">
+	    <label for="LastName">Last Name:</label>
+	    <input name="LastName" type="lastname" class="form-control" id="LastName">
+	  </div><div class="form-group">
+	    <label for="Email">Email address:</label>
+	    <input name="Email" type="email" class="form-control" id="Email">
+	  </div>
+	  <div class="form-group">
+	    <label for="Password">Password:</label>
+	    <input name="Password" type="password" class="form-control" id="Password">
+	  </div>
+	  <br>
+	  <div class="form-group">
+		<button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+	  </div>
+	</form>
+	</div>
+
   </body>
+
 </html>
