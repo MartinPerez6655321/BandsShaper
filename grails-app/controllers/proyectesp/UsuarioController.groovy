@@ -5,7 +5,19 @@ import usuarios.UsuarioService
 class UsuarioController {
 
     def index(){
+        new Instrumento(name: 'Guitarra Electrica').save()
+        new Instrumento(name: 'Bajo').save()
+        new Instrumento(name: 'Bateria').save()
 
+        new GeneroMusical(name: 'Hard Rock').save()
+        new GeneroMusical(name: 'Heavy Metal').save()
+        new GeneroMusical(name: 'Alternative Rock').save()
+
+        new RolMusical(name: 'Voz').save()
+        new RolMusical(name: 'Bajista').save()
+        new RolMusical(name: 'Guitarrista').save()
+
+        redirect(action: "parametrization")
     }
 
     def home() {

@@ -1,0 +1,72 @@
+
+body
+{
+   padding-top: 0px;
+   background-image: url("../images/wallParametrization.jpg");
+    no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#tabla {
+   overflow-x: hidden;
+   overflow-y: scroll;
+   float:center;
+   margin:auto;
+   margin-top: 40px;
+   width:450px;
+   height: 240px;
+   border: #0174DF 2px solid;
+   background: black;
+}
+
+th {
+   text-align: center;
+   background: rgb(128,128,64);
+   color: black;
+}
+
+td {
+   text-align: center;
+}
+
+
+
+
+
+
+
+form
+{
+   float:center;
+   padding-top: 15px;
+   cursor:pointer;
+   display:block;
+   width:350px;
+   margin:auto;
+   text-align:left;
+   align-content: center;
+   position: center;
+}
+
+label
+{
+   color: white;
+}
+
+h4
+{
+   color: black;
+}
+
+#hoja
+{
+   float:center;
+   margin:auto;
+   background: rgb(128,128,64);
+   width:450px;
+   height: 210px;
+   border-radius: 10px;
+}

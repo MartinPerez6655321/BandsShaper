@@ -12,11 +12,11 @@
 	  <h1>Sign up</h1>
 	  <div class="form-group">
 	    <label for="Name">Name:</label>
-	    <input name="Name" type="name" class="form-control" id="Name">
+	    <input name="Name" type="text" class="form-control" id="Name">
 	  </div>
 	  <div class="form-group">
 	    <label for="LastName">Last Name:</label>
-	    <input name="LastName" type="lastname" class="form-control" id="LastName">
+	    <input name="LastName" type="text" class="form-control" id="LastName">
 	  </div><div class="form-group">
 	    <label for="Email">Email address:</label>
 	    <input name="Email" type="email" class="form-control" id="Email">
