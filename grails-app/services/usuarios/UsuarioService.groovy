@@ -9,7 +9,7 @@ import proyectesp.Usuario
 @Transactional
 class UsuarioService {
 
-    static boolean realizarAlta(String nombre, String apellido, String email, String pass)
+    boolean realizarAlta(String nombre, String apellido, String email, String pass)
     {
         def newUser = new Usuario(name: nombre, lastname: apellido, email: email, password: pass)
         //reemplazar la condicion por un metodo que verifique que el usuario no se encuentra en la BD, esto esta en el DAO
@@ -24,7 +24,7 @@ class UsuarioService {
         }
     }
 
-    static boolean realizarLogin(String email, String pass)
+    boolean realizarLogin(String email, String pass)
     {
         if (Usuario.findByEmail(email) && Usuario.findByPassword(pass))
         {
@@ -39,33 +39,33 @@ class UsuarioService {
 //-------------------------------------------------------------
 //-------------------------------------------------------------
 
-    static guardarInstrumento(String nameInstr){
+    void guardarInstrumento(String nameInstr){
         if (Instrumento.findByName(nameInstr)==null){
             new Instrumento(name: nameInstr).save()
         }
     }
 
-    static guardarGeneroMusical(String nameGenero){
+    void guardarGeneroMusical(String nameGenero){
         if (GeneroMusical.findByName(nameGenero)==null){
             new GeneroMusical(name: nameGenero).save()
         }
     }
 
-    static guardarRolMusical(String nameRol){
+    void guardarRolMusical(String nameRol){
         if (RolMusical.findByName(nameRol)==null){
             new RolMusical(name: nameRol).save()
         }
     }
 
-    static Instrumento[] listarInstrumentos() {
+    Instrumento[] listarInstrumentos() {
         Instrumento.list() as Instrumento[]
     }
 
-    static GeneroMusical[] listarGenerosMusicales() {
+    GeneroMusical[] listarGenerosMusicales() {
         GeneroMusical.list() as GeneroMusical[]
     }
 
-    static RolMusical[] listarRolesMusicales() {
+    RolMusical[] listarRolesMusicales() {
         RolMusical.list() as RolMusical[]
     }
 
