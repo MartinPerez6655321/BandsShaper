@@ -17,6 +17,9 @@ class UsuarioController {
         new RolMusical(name: 'Bajista').save()
         new RolMusical(name: 'Guitarrista').save()
 
+        new OndaMusical(name: 'Led Zeppelin').save()
+        new OndaMusical(name: 'Queen').save()
+
         redirect(action: "parametrization")
     }
 
@@ -83,6 +86,10 @@ class UsuarioController {
         [ rolesMusicales: UsuarioService.listarRolesMusicales() ]
     }
 
+    def addOndaMusic(){
+        [ OndasMusicales: UsuarioService.listarOndasMusicales() ]
+    }
+
     def saveInstrumento(){
         UsuarioService.guardarInstrumento(params.instrument)
         redirect(action: "addInstrument")
@@ -98,6 +105,10 @@ class UsuarioController {
         redirect(action: "addRoleMusic")
     }
 
+    def saveOndaMusical(){
+        UsuarioService.guardarOndaMusical(params.onda)
+        redirect(action: "addOndaMusic")
+    }
 //---------------------------------------------------------------------------
 //---------------------------------------------------------------------------
 

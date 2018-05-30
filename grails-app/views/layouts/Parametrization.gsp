@@ -44,6 +44,9 @@
       <li class="nav-item">
         <a class="nav-link" href="http://localhost:8080/usuario/addRoleMusic">► Rol Musical</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost:8080/usuario/addOndaMusic">► Onda Musical</a>
+      </li>
     </ul>
   </div>
 </nav>

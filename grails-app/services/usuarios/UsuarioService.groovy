@@ -4,6 +4,7 @@ import grails.gorm.transactions.Transactional
 import proyectesp.GeneroMusical
 import proyectesp.Instrumento
 import proyectesp.RolMusical
+import proyectesp.OndaMusical
 import proyectesp.Usuario
 
 @Transactional
@@ -57,6 +58,12 @@ class UsuarioService {
         }
     }
 
+    void guardarOndaMusical(String nameOnda){
+        if (OndaMusical.findByName(nameOnda)==null){
+            new OndaMusical(name: nameOnda).save()
+        }
+    }
+
     Instrumento[] listarInstrumentos() {
         Instrumento.list() as Instrumento[]
     }
@@ -67,6 +74,10 @@ class UsuarioService {
 
     RolMusical[] listarRolesMusicales() {
         RolMusical.list() as RolMusical[]
+    }
+
+    OndaMusical[] listarOndasMusicales() {
+        OndaMusical.list() as OndaMusical[]
     }
 
 //-------------------------------------------------------------
