@@ -1,8 +1,8 @@
 package proyectesp
 
-import usuarios.UsuarioService
-
 class UsuarioController {
+
+    def UsuarioService
 
     def index(){
         new Instrumento(name: 'Guitarra Electrica').save()
