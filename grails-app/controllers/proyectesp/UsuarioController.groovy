@@ -20,7 +20,10 @@ class UsuarioController {
         new OndaMusical(name: 'Led Zeppelin').save()
         new OndaMusical(name: 'Queen').save()
 
-        redirect(action: "parametrization")
+        new Usuario(name: 'Ernesto', lastname: 'Guevara', email: 'Ernesto@gmail.com', password: 1234).save()
+        new Usuario(name: 'Diego', lastname: 'Maradona', email: 'Diego@gmail.com', password: 1234).save()
+
+        redirect(action: "home")
     }
 
     def home() {
