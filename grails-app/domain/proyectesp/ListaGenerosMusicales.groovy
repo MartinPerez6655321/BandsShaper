@@ -8,6 +8,8 @@ class ListaGenerosMusicales {
         genero blank: false
     }
 
+    String toString() { return genero}
+
     static belongsTo = [ postulacionMusical : PostulacionMusico ]
 
 }

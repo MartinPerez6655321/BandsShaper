@@ -8,6 +8,8 @@ class OndasMusicales {
         onda blank: false
     }
 
+    String toString() { return onda}
+
     static belongsTo = [ perfilMusical : PerfilMusical ]
 
 }
