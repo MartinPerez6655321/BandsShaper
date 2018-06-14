@@ -24,6 +24,7 @@ class UsuarioController {
         new Usuario(name: 'Diego', lastname: 'Maradona', email: 'Diego@gmail.com', password: 12345678).save()
 
         redirect(action: "home")
+
     }
 
     def home() {
