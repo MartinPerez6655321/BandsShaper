@@ -20,8 +20,13 @@ class UsuarioController {
         new OndaMusical(name: 'Led Zeppelin').save()
         new OndaMusical(name: 'Queen').save()
 
-        new Usuario(name: 'Ernesto', lastname: 'Guevara', email: 'Ernesto@gmail.com', password: 12345678).save()
-        new Usuario(name: 'Diego', lastname: 'Maradona', email: 'Diego@gmail.com', password: 12345678).save()
+        new Usuario(name: 'Javier', lastname: 'Ramos', email: 'JavierRamos@gmail.com', password: 12345678).save()
+        new Usuario(name: 'Boris', lastname: 'Ramos', email: 'BorisRamos@gmail.com', password: 12345678).save()
+        new Usuario(name: 'Nahuel', lastname: 'Perez', email: 'NahuelPerez@gmail.com', password: 12345678).save()
+
+        new Usuario(name: 'John', lastname: 'Lennon', email: 'JohnLennon@gmail.com', password: 12345678).save()
+        new Usuario(name: 'Jimmy', lastname: 'Page', email: 'JimmyPage@gmail.com', password: 12345678).save()
+        new Usuario(name: 'Kurt', lastname: 'Cobain', email: 'KurtCobain@gmail.com', password: 12345678).save()
 
         redirect(action: "home")
 
