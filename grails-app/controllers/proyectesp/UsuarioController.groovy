@@ -5,7 +5,7 @@ class UsuarioController {
     def UsuarioService
 
     def index(){
-        new Instrumento(name: 'Guitarra Electrica').save()
+        /*new Instrumento(name: 'Guitarra Electrica').save()
         new Instrumento(name: 'Bajo').save()
         new Instrumento(name: 'Bateria').save()
 
@@ -27,7 +27,7 @@ class UsuarioController {
         new Usuario(name: 'John', lastname: 'Lennon', email: 'JohnLennon@gmail.com', password: 12345678).save()
         new Usuario(name: 'Jimmy', lastname: 'Page', email: 'JimmyPage@gmail.com', password: 12345678).save()
         new Usuario(name: 'Kurt', lastname: 'Cobain', email: 'KurtCobain@gmail.com', password: 12345678).save()
-
+        */
         redirect(action: "home")
 
     }
